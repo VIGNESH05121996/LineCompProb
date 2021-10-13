@@ -2,7 +2,7 @@
 
 namespace LineCompProb
 {
-    class EqOfTwoLines
+    class CompTwoLines
     {
         public int Point1(int x1, int x2)
         {
@@ -30,8 +30,8 @@ namespace LineCompProb
         }
         public static void Main(string[] args)
         {
-            EqOfTwoLines cl = new EqOfTwoLines();
-            int a = cl.Point1(10, 30);
+            CompTwoLines cl = new CompTwoLines();
+            int a = cl.Point1(10, 20);
             int b = cl.Point2(30, 40);
             int c = cl.Point3(50, 60);
             int d = cl.Point4(70, 80);
@@ -44,9 +44,13 @@ namespace LineCompProb
             {
                 Console.WriteLine("Both Line Are Equal ");
             }
+            else if (result1 > result2)
+            {
+                Console.WriteLine(" First Line Length Is Greater ");
+            }
             else
             {
-                Console.WriteLine(" BOth Lines Are Not Equal ");
+                Console.WriteLine("Second Line Length Is Greater");
             }
         }
     }
